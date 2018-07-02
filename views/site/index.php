@@ -10,6 +10,7 @@ $this->registerJsFile('@web/js/main-index.js',['position'=>$this::POS_END],'main
 $this->registerCssFile('@web/css/site.css');
 ?>
 
+
 <p class="site-index" xmlns="http://www.w3.org/1999/html">
 
     <div class="jumbotron">
