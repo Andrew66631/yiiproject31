@@ -4,8 +4,7 @@
 //$get = $request->post('inputext');
 //echo $get;
 
-var_dump($_POST);
-var_dump($_POST);
+echo "Закомитил , спушил и залил";
 
 
 
