@@ -1,13 +1,9 @@
 <?php 
 namespace app\controllers;
-use yii\web\controller;
+use yii\rest\ActiveController;
 
-class MyController extends Controller
+class MyController extends ActiveController
 {
-
-	public function actionMy($message='Привет')
-	{
-		return $this->render('my',['message'=>$message]);
-	}
+	public $modelClass = 'app\models\User';
 }
 ?>
