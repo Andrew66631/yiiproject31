@@ -7,3 +7,4 @@ class MyController extends ActiveController
 	public $modelClass = 'app\models\User';
 }
 ?>
+
