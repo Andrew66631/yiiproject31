@@ -5,7 +5,7 @@ use yii\rest\ActiveController;
 
 class MyController extends ActiveController
 {
-	public $modelClass = 'app\models\acl_users';
+	//public $modelClass = 'app\models\acl_users';
 	/*public function actionMy()
     {
         $model=new acl_users();
@@ -13,6 +13,15 @@ class MyController extends ActiveController
             'model' => $model,
         ]);
     }*/
+}
+public function actionIndex()
+{
+	$hi='Контроллер успешно отрабатывает';
+	return $this->render('index',
+	[
+		'hi'=>$hi,
+]
+	);
 }
 ?>
 
