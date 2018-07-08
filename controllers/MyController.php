@@ -13,10 +13,10 @@ class MyController extends ActiveController
             'model' => $model,
         ]);
     }*/
-
+    public $modelClass = 'app\models\acl_users';
     public function actionIndex()
     {
-        public $modelClass = 'app\models\acl_users';
+
         $hi = 'Контроллер успешно отрабатывает';
         return $this->render('index',
             [
