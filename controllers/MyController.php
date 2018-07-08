@@ -16,6 +16,7 @@ class MyController extends ActiveController
 
     public function actionIndex()
     {
+        public $modelClass = 'app\models\acl_users';
         $hi = 'Контроллер успешно отрабатывает';
         return $this->render('index',
             [
