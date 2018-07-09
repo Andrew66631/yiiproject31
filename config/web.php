@@ -54,6 +54,7 @@ $config = [
                 '/'=>'site/index',
                 'contact'=>'site/contact',
                 'login'=>'site/login',
+                'about'=>'site/about',
             ],
         ],
         /*'request' => [
