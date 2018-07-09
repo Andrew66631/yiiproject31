@@ -53,7 +53,7 @@ $config = [
             'rules' => [
                 '/'=>'site/index',
                 'contact'=>'site/contact',
-                'login'=>'site/login'
+                'login'=>'site/login',
             ],
         ],
         /*'request' => [
