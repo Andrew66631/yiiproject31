@@ -51,10 +51,9 @@ $config = [
             'enableStrictParsing'=>false,
             'showScriptName' => false,
             'rules' => [
-                '/'=>'site/index',
-                'contact'=>'site/contact',
-                'login'=>'site/login',
-                'about'=>'site/about',
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ],
         ],
         /*'request' => [
