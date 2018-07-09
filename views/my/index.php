@@ -14,5 +14,6 @@ $this->registerCssFile('@web/css/site.css');
 
 <div class="jumbotron">
     <?= $hi ?>
+    <?= $hi ?>
 </div>
 </p>
