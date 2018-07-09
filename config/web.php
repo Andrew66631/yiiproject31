@@ -46,15 +46,15 @@ $config = [
         ],
         'db' => $db,
 
-       /* 'urlManager' => [
+        'urlManager' => [
             'enablePrettyUrl' => true,
             'enableStrictParsing'=>true,
             'showScriptName' => false,
-            'rules' => [
-                ['class'=>'yii\rest\UrlRule','controller'=>'my'],
-            ],
+            //'rules' => [
+                //['class'=>'yii\rest\UrlRule','controller'=>'my'],
+            //],
         ],
-        'request' => [
+        /*'request' => [
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ],
