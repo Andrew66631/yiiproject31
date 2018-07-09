@@ -50,9 +50,11 @@ $config = [
             'enablePrettyUrl' => true,
             'enableStrictParsing'=>false,
             'showScriptName' => false,
-            //'rules' => [
-                //['class'=>'yii\rest\UrlRule','controller'=>'my'],
-            //],
+            'rules' => [
+                '/'=>'site/index',
+                'contact'=>'site/contact',
+                'login'=>'site/login'
+            ],
         ],
         /*'request' => [
             'parsers' => [
