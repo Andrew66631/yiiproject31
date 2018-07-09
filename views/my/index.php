@@ -5,6 +5,9 @@ use yii\widgets\LinkPager;
 /* @var $hi string */
 ?>
 
-<p>
+<p class="site-index" xmlns="http://www.w3.org/1999/html">
+
+<div class="jumbotron">
     <?= $hi ?>
+</div>
 </p>
