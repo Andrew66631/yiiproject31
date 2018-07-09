@@ -46,7 +46,7 @@ $config = [
         ],
         'db' => $db,
 
-        'urlManager' => [
+        /*'urlManager' => [
             'enablePrettyUrl' => true,
             'enableStrictParsing'=>false,
             'showScriptName' => false,
@@ -55,7 +55,7 @@ $config = [
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ],
-        ],
+        ],*/
         /*'request' => [
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
