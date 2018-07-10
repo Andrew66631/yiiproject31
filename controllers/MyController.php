@@ -20,9 +20,10 @@ class MyController extends ActiveController
     public function behaviors()
     {
         $behaviors = parent::behaviors();
+        $behaviorstwo = parent::behaviors();
         $behaviors['contentNegotiator']['formats']['text/xml'] = Response::FORMAT_HTML;
-        $behaviors['contentNegotiator']['formats']['text/html'] = Response::FORMAT_HTML;
-        return $behaviors;
+        $behaviorstwo['contentNegotiator']['formats']['text/html'] = Response::FORMAT_HTML;
+        return $behaviors,$behaviorstwo;
     }
     public function actionNew()
     {
