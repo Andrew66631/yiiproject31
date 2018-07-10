@@ -13,6 +13,10 @@ use yii\rest\ActiveController;
 class MyController extends ActiveController
 {
     public $modelClass = 'app\models\acl_users';
+    public $serializer = [
+        'class' => 'yii\rest\Serializer',
+        'collectionEnvelope' => 'items',
+    ];
     public function behaviors()
     {
         $behaviors = parent::behaviors();
