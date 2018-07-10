@@ -13,7 +13,7 @@ class MyController extends ActiveController
             'model' => $model,
         ]);
     }*/
-    public $modelClass = 'app\models\acl_users';
+    //public $modelClass = 'app\models\acl_users';
     public function actionIndex()
     {
 
