@@ -8,10 +8,19 @@ class MyController extends ActiveController
     public function actionNew()
     {
 
-        $hi = 'Контроллер успешно отрабатывает и другие экшн';
+        $query=acl_users::find();
+        $pagination= new Pagination([
+            'defaultPageSize'=>40,
+            'totalCount'=>$query->count(),
+        ]);
+        $users=$query->orderBy('id')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
        return $this->render('new',
             [
-               'hi' => $hi,
+                'users'=>$users,
+                'pagination'=>$pagination,
            ]
         );
     }

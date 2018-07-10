@@ -13,7 +13,14 @@ $this->registerCssFile('@web/css/site.css');
 <p class="site-index" xmlns="http://www.w3.org/1999/html">
 
 <div class="jumbotron">
-    <?= $hi ?>
-    <?= $hi ?>
+    <div class="table">
+        <label id="tablenames" class="lead">Пользователи нашего сайта</label>
+        <?php foreach ($users as $user): ?>
+            <div class="th">
+                <?= Html::encode("{$user->name}") ?>
+                <!--?= $user->id ?-->
+            </div>
+        <?php endforeach; ?>
+    </div>
 </div>
 </p>
