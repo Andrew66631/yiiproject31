@@ -13,6 +13,12 @@ use yii\rest\ActiveController;
 class MyController extends ActiveController
 {
     public $modelClass = 'app\models\acl_users';
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['contentNegotiator']['formats']['text/html'] = Response::FORMAT_HTML;
+        return $behaviors;
+    }
     public function actionNew()
     {
 
