@@ -56,13 +56,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'my',
-                    'PUT,PATCH users/<id>' => 'my/update',
-                    'DELETE users/<id>' => 'my/delete',
-                    'GET,HEAD users/<id>' => 'my/view',
-                    'POST users' => 'my/create',
-                    'GET,HEAD users' => 'my/index',
-                    'users/<id>' => 'my/options',
-                    'users' => 'my/options',
+
                     ],
             ],
 
