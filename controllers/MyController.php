@@ -1,10 +1,14 @@
 <?php 
 namespace app\controllers;
 use app\models\acl_users;
-//use yii\rest\ActiveController;
-use yii\web\Controller;
+use yii\rest\ActiveController;
+class MyController extends ActiveController
+{
+    public $modelClass = 'app\models\acl_users';
+}
+//use yii\web\Controller;
 
-class MyController extends Controller
+//class MyController extends Controller
 {
     //public $modelClass = 'app\models\acl_users';
     /*public function actionMy()
@@ -15,16 +19,15 @@ class MyController extends Controller
         ]);
     }*/
     //public $modelClass = 'app\models\acl_users';
-    public function actionIndex()
-    {
+    //public function actionIndex()
+    //{
 
-        $hi = 'Контроллер успешно отрабатывает';
-        return $this->render('index',
-            [
-                'hi' => $hi,
-            ]
-        );
-    }
-}
+       // $hi = 'Контроллер успешно отрабатывает';
+       // return $this->render('index',
+            //[
+              //  'hi' => $hi,
+           // ]
+        //);
+   // }
+//}
 ?>
-
