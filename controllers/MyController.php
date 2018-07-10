@@ -1,5 +1,13 @@
-<?php 
+<?php
 namespace app\controllers;
+
+use Yii;
+use yii\data\Pagination;
+use yii\filters\AccessControl;
+use yii\web\Response;
+use yii\filters\VerbFilter;
+use app\models\LoginForm;
+use app\models\ContactForm;
 use app\models\acl_users;
 use yii\rest\ActiveController;
 class MyController extends ActiveController
