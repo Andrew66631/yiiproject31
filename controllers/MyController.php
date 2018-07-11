@@ -20,7 +20,7 @@ class MyController extends ActiveController
     public function behaviors()
     {
         $behaviors = parent::behaviors();
-        $behaviors['contentNegotiator']['formats']['text/html'] = Response::FORMAT_HTML;
+        $behaviors['contentNegotiator']['formats']['text/json'] = Response::FORMAT_HTML;
         return $behaviors;
     }
 
