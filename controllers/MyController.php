@@ -19,9 +19,21 @@ class MyController extends ActiveController
     ];
     public function behaviors()
     {
-        $behaviors = parent::behaviors();
-        $behaviors['contentNegotiator']['formats']['text/xml'] = Response::FORMAT_JSON;
-        return $behaviors;
+        return ArrayHelper::merge(parent::behaviors(), [
+            [
+                'class' => 'yii\filters\ContentNegotiator',
+                'only' => ['view', 'index'],  // in a controller
+                // if in a module, use the following IDs for user actions
+                // 'only' => ['user/view', 'user/index']
+                'formats' => [
+                    'application/json' => Response::FORMAT_JSON,
+                ],
+                'languages' => [
+                    'en',
+                    'de',
+                ],
+            ],
+        ]);
     }
 
     public function actionNew()
