@@ -20,23 +20,10 @@ class MyController extends ActiveController
     public function behaviors()
     {
         $behaviors = parent::behaviors();
-        $behaviors['contentNegotiator']['formats']['text/xml,text/xml'] = Response::FORMAT_HTML;
+        $behaviors['contentNegotiator']['formats']['text/xml'] = Response::FORMAT_HTML;
         return $behaviors;
     }
-    public function actions()
-    {
-        $actions = parent::actions();
-        unset($actions['index']);
-        unset($actions['view']);
-        return $actions;
-    }
 
-    public function actionIndex($id)
-    {
-        // some code
-        // check $id and etc
-        return $modelClass::findOne($id);
-    }
     public function actionNew()
     {
 
