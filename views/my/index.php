@@ -6,8 +6,9 @@ use yii\widgets\LinkPager;
 $this->title = 'Site';
 $default='';
 $this->registerJsFile('@web/js/main-index.js',['position'=>$this::POS_END],'main-index');
-//$this->registerJs('alert("Привет мир")',$this::POS_READY,'hello-message');
 $this->registerCssFile('@web/css/site.css');
+//$this->registerJs('alert("Привет мир")',$this::POS_READY,'hello-message');
+
 ?>
 
 <p class="site-index" xmlns="http://www.w3.org/1999/html">

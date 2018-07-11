@@ -23,7 +23,7 @@ class MyController extends ActiveController
         $behaviors['contentNegotiator']['formats']['text/xml'] = Response::FORMAT_JSON;
         return $behaviors;
     }
-/*
+
     public function actionNew()
     {
 
@@ -42,6 +42,6 @@ class MyController extends ActiveController
                 'pagination'=>$pagination,
            ]
         );
-    }*/
+    }
 }
 ?>
