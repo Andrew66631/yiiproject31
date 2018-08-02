@@ -7,8 +7,6 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    //'layout'=>'rest',
-    //'defaultRoute'=>'my/index',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -61,12 +59,6 @@ $config = [
             ],
 
         ],
-        /*'request' => [
-            'parsers' => [
-                'application/json' => 'yii\web\JsonParser',
-            ],
-            'cookieValidationKey' => '-SbYSsW6ZMSp6GkE35-pTOdROKXlucxz',
-        ],*/
 
 
     ],

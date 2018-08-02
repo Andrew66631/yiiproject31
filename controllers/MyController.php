@@ -20,6 +20,30 @@ class MyController extends ActiveController
     ];
     public function behaviors()
     {
+        return [
+            [
+                'class' => 'yii\filters\ContentNegotiator',
+                'only' => ['index', 'view','create','update','search'],
+                'formats' => ['application/json' =>Response::FORMAT_JSON,],
+
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'index'=>['get'],
+                    'view'=>['get'],
+                    'create'=>['post'],
+                    'update'=>['PUT'],
+                    'delete' => ['delete'],
+                    'deleteall'=>['post'],
+                    'search'   => ['get']
+                ],
+
+            ]
+        ];
+    }
+    /*public function behaviors()
+    {
         return ArrayHelper::merge(parent::behaviors(), [
             [
                 'class' => 'yii\filters\ContentNegotiator',
@@ -35,9 +59,9 @@ class MyController extends ActiveController
                 ],
             ],
         ]);
-    }
+    }*/
 
-    public function actionNew()
+    /*public function actionNew()
     {
 
         $query=acl_users::find();
@@ -55,6 +79,6 @@ class MyController extends ActiveController
                 'pagination'=>$pagination,
            ]
         );
-    }
+    }*/
 }
 ?>
