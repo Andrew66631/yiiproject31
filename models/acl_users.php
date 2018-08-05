@@ -14,7 +14,7 @@ class acl_users extends ActiveRecord
     {
         return [
             [['id'], 'integer'],
-            [['name'], 'character varying(40)'],
+            [['name'], 'string'],
         ];
     }
 }
