@@ -8,7 +8,7 @@ class acl_users extends ActiveRecord
 {
     public static function tableName()
     {
-        return 'articles';
+        return 'acl_users';
     }
     public function rules()
     {
